@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[About to Begin Executing SuiteSuite]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method: BaseTest.init]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method: BaseTest.init]]>
+    </line>
+    <line>
+      <![CDATA[About to Begin Executing TestTest]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method: BaseTest.open_application]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method: BaseTest.open_application]]>
+    </line>
+    <line>
+      <![CDATA[Execution of main test starts now]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method: ValidLinks.verifyLinks]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method: ValidLinks.verifyLinks]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testScripts.ValidLinks]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Failed]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method: BaseTest.close_application]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method: BaseTest.close_application]]>
+    </line>
+    <line>
+      <![CDATA[Completed Executing TestTest]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method: BaseTest.end]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method: BaseTest.end]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="10798" started-at="2018-03-02T13:29:44Z" finished-at="2018-03-02T13:29:54Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="10798" started-at="2018-03-02T13:29:44Z" finished-at="2018-03-02T13:29:54Z">
+      <class name="testScripts.ValidLinks">
+        <test-method status="PASS" signature="init()[pri:0, instance:testScripts.ValidLinks@56235b8e]" name="init" is-config="true" duration-ms="282" started-at="2018-03-02T18:59:43Z" finished-at="2018-03-02T18:59:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method: BaseTest.init]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="open_application(java.lang.reflect.Method)[pri:0, instance:testScripts.ValidLinks@56235b8e]" name="open_application" is-config="true" duration-ms="5820" started-at="2018-03-02T18:59:44Z" finished-at="2018-03-02T18:59:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testScripts.ValidLinks.verifyLinks()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method: BaseTest.open_application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- open_application -->
+        <test-method status="FAIL" signature="verifyLinks()[pri:0, instance:testScripts.ValidLinks@56235b8e]" name="verifyLinks" duration-ms="2428" started-at="2018-03-02T18:59:49Z" finished-at="2018-03-02T18:59:52Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at testScripts.ValidLinks.verifyLinks(ValidLinks.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method: ValidLinks.verifyLinks]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testScripts.ValidLinks]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Failed]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method: BaseTest.close_application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLinks -->
+        <test-method status="PASS" signature="close_application(org.testng.ITestResult)[pri:0, instance:testScripts.ValidLinks@56235b8e]" name="close_application" is-config="true" duration-ms="2531" started-at="2018-03-02T18:59:52Z" finished-at="2018-03-02T18:59:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLinks status=FAILURE method=ValidLinks.verifyLinks()[pri:0, instance:testScripts.ValidLinks@56235b8e] output=Completed executing following method: ValidLinks.verifyLinks]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method: BaseTest.close_application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- close_application -->
+        <test-method status="PASS" signature="end()[pri:0, instance:testScripts.ValidLinks@56235b8e]" name="end" is-config="true" duration-ms="233" started-at="2018-03-02T18:59:54Z" finished-at="2018-03-02T18:59:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method: BaseTest.end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- testScripts.ValidLinks -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

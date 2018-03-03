@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="generic.Listener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testScripts.ValidLinks">
+        <methods>
+          <include name="open_application"/>
+          <include name="init"/>
+          <include name="end"/>
+          <include name="verifyLinks"/>
+          <include name="close_application"/>
+        </methods>
+      </class> <!-- testScripts.ValidLinks -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
